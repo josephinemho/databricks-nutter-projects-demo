@@ -1,7 +1,7 @@
 # Databricks notebook source
 # install nutter in cluster if you want to trigger tests from command line
-%python
-%pip install -U nutter
+# %python
+# %pip install -U nutter
 
 # COMMAND ----------
 
@@ -44,11 +44,10 @@ class Test1Fixture(NutterFixture):
 
 result = Test1Fixture().execute_tests()
 print(result.to_string())
-<<<<<<< HEAD
-=======
+
 # Comment out the next line (result.exit(dbutils)) to see the test result report from within the notebook
 # testing release pipeline
->>>>>>> master
+
 is_job = dbutils.notebook.entry_point.getDbutils().notebook().getContext().currentRunId().isDefined()
 if is_job:
   result.exit(dbutils)
