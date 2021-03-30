@@ -6,7 +6,3 @@ def generate_data():
 # COMMAND ----------
 
 generate_data()
-
-# COMMAND ----------
-
-# just make a comment
